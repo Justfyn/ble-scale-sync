@@ -1,7 +1,7 @@
 {
   "name": "BLE Scale Sync (Garmin)",
   "slug": "ble_scale_sync",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "Sync Xiaomi Mi Scale 2 measurements to Garmin Connect.",
   "arch": ["aarch64"],
   "startup": "services",
@@ -12,8 +12,8 @@
   "mounts": [
     {
       "type": "bind",
-      "source": "/run/dbus",
-      "target": "/var/run/dbus",
+      "source": "/run/dbus/system_bus_socket",
+      "target": "/var/run/dbus/system_bus_socket",
       "read_only": true
     }
   ],

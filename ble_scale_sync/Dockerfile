@@ -22,6 +22,8 @@ WORKDIR /app
 RUN git clone --depth 1 --branch v${BLE_SCALE_SYNC_VERSION} \
     https://github.com/KristianP26/ble-scale-sync.git /app
 
+RUN chmod +x /app/docker-entrypoint.sh
+
 RUN pip3 install --break-system-packages --no-cache-dir -r requirements.txt
 RUN npm ci --omit=dev && npm cache clean --force
 

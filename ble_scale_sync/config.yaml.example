@@ -4,6 +4,9 @@ ble: {}
 # Optional: set your scale MAC for reliable matching
 # ble:
 #   scale_mac: "FF:03:00:13:A1:04"
+# Optional: use a different BLE backend (Linux only)
+# ble:
+#   noble_driver: abandonware
 
 scale:
   weight_unit: kg

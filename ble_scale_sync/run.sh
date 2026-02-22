@@ -19,6 +19,7 @@ mkdir -p /data/garmin_tokens
 
 if [ -f /data/options.json ]; then
   SCALE_MAC=$(python3 -c "import json;print(json.load(open('/data/options.json')).get('scale_mac',''))")
+  NOBLE_DRIVER=$(python3 -c "import json;print(json.load(open('/data/options.json')).get('noble_driver',''))")
   GARMIN_EMAIL=$(python3 -c "import json;print(json.load(open('/data/options.json')).get('garmin_email',''))")
   GARMIN_PASSWORD=$(python3 -c "import json;print(json.load(open('/data/options.json')).get('garmin_password',''))")
   CONTINUOUS_MODE=$(python3 -c "import json;print(json.load(open('/data/options.json')).get('continuous_mode',''))")
@@ -27,6 +28,9 @@ if [ -f /data/options.json ]; then
 
   if [ -n "${SCALE_MAC}" ]; then
     export SCALE_MAC
+  fi
+  if [ -n "${NOBLE_DRIVER}" ]; then
+    export NOBLE_DRIVER
   fi
   if [ -n "${GARMIN_EMAIL}" ]; then
     export GARMIN_EMAIL

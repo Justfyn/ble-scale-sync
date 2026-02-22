@@ -1,7 +1,7 @@
 {
   "name": "BLE Scale Sync (Garmin)",
   "slug": "ble_scale_sync",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "Sync Xiaomi Mi Scale 2 measurements to Garmin Connect.",
   "arch": ["aarch64"],
   "startup": "services",
@@ -13,6 +13,7 @@
   "map": ["config:rw"],
   "options": {
     "scale_mac": "",
+    "noble_driver": "",
     "garmin_email": "",
     "garmin_password": "",
     "continuous_mode": true,
@@ -21,6 +22,7 @@
   },
   "schema": {
     "scale_mac": "str?",
+    "noble_driver": "list(abandonware|stoprocent)?",
     "garmin_email": "str",
     "garmin_password": "password",
     "continuous_mode": "bool",

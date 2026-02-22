@@ -12,7 +12,7 @@ Minimal Home Assistant add-on to read Xiaomi Mi Scale 2 measurements over BLE an
 
 ## Notes
 
-- This add-on requires host networking and host D-Bus access.
+- This add-on requires host networking, host D-Bus access, and privileged mode for BLE.
 - The add-on creates a default config file on first run if none exists.
 - Garmin tokens are stored at /data/garmin_tokens and persist across restarts.
 

@@ -8,7 +8,7 @@ Minimal Home Assistant add-on to read Xiaomi Mi Scale 2 measurements over BLE an
 2. Install the add-on and start it.
 3. Edit the config at /config/ble-scale-sync/config.yaml.
 4. Set add-on options for GARMIN_EMAIL and GARMIN_PASSWORD.
-5. Optional: set the BLE backend via the add-on option `noble_driver` (abandonware or stoprocent).
+5. Optional: set the BLE backend via the add-on option `noble_driver` (use `abandonware` or `stoprocent`).
 
 ## Notes
 

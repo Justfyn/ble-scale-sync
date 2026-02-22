@@ -1,8 +1,9 @@
 version: 1
 
-ble:
-  # Optional: set your scale MAC for reliable matching
-  # scale_mac: "FF:03:00:13:A1:04"
+ble: {}
+# Optional: set your scale MAC for reliable matching
+# ble:
+#   scale_mac: "FF:03:00:13:A1:04"
 
 scale:
   weight_unit: kg

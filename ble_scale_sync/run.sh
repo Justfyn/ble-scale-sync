@@ -45,4 +45,4 @@ if [ -f /data/options.json ]; then
   fi
 fi
 
-exec /app/docker-entrypoint.sh start
+exec sh /app/docker-entrypoint.sh start
